@@ -1,10 +1,3 @@
-# lua-using
-using() function for Lua.
-
-## Examples
-
-Program:
-```lua
 local using = require"using".using
 
 local mt = { __gc = print }
@@ -17,11 +10,3 @@ end
 
 xpcall(example, print)
 print "did we cleanup? yes!"
-```
-
-Output:
-```
-table: 0xe5d010
-./using.lua:11: example.lua:7: the file should get cleaned up
-did we cleanup? yes!
-```
